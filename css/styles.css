@@ -1,0 +1,492 @@
+/*GLOBAL STYLES*/
+
+/*
+====================================================================================
+GLOBAL STYLES
+====================================================================================
+*/
+
+ /*    
+ * {global attribute tag for CSS}
+ */
+html, body {
+    height:100%;
+}
+body {
+    margin:0px;
+    padding:0px;
+    background-color:#000;
+    font-family:'Source Sans Pro', Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:300;
+    color:#fff;
+}
+h1, h2, h3 {
+    margin:0px;
+    padding:0px;
+    color:#3399FF;  /*this color is lime green*/
+}
+h1 {
+    font-size:2.3em;
+}
+p {
+    line-height:20px;
+    margin:15px 0px;
+}
+strong, b {
+    color:#8dc63f;
+}
+a {
+    color:#8dc63f;
+    text-decoration:none;
+}
+a:hover {
+    color:#3399FF;  /*this color is light blue*/
+    text-decoration:underline;
+}
+
+figure {
+    margin:0px;
+    padding:0px;
+}
+
+
+/*HEADER STYLES===================================================================================
+*/
+
+header {
+    background-color:#F5F5EE; /*this color is light gray*/
+}
+
+#header {
+    position:relative;
+    padding:15px 0px;
+}
+
+#logo {
+    color:#3399FF;
+	font-family: 'Trade Winds', cursive;
+}
+
+#logo {
+    width:350px;
+}
+
+#logo:hover {
+    color:#8dc63f;
+    text-decoration:none;
+}
+
+/*NAVIGATION STYLES===================================================================================
+*/
+
+#menu {
+    position:absolute;
+    top:23.5px;
+    right:5%; /* this keeps it 5% from the right side*/
+    
+}
+
+#menu li {
+    display:inline;
+    margin:0px 10px;
+    text-transform:uppercase;
+    font-weight:700;
+    font-size:20px;
+}
+
+#menu li:after {
+    content:"|";
+    padding: 0px 20px;
+    color:#3399FF;
+}
+
+.currentPage a {
+    color:#3399FF;
+}
+
+
+/*   BANNER STYLES===========================================================================    
+*/
+
+
+
+#bannerHome {
+    background:url(../images/banner1.jpg) no-repeat center center #CC0099;
+    background-size:cover;
+    border-top:3px solid #3399FF ;
+    padding: 100px 0px;
+    overflow:hidden;
+}
+
+#bannerAbout {
+    background:url(../images/bannerResume.jpg) no-repeat center center #8dc63f;
+    background-size:cover;
+    border-top:3px solid #3399FF ;
+    padding: 100px 0px;
+    overflow:hidden;
+}
+
+#bannerContact {
+    background:url(../images/banner3.jpg) no-repeat center center #8dc63f;
+    background-size:cover;
+    border-top:3px solid #3399FF ;
+    padding: 150px 0px;
+    overflow:hidden;
+}
+
+#bannerFamily {
+	background:url(../images/bannerFamily.jpg) no-repeat center center #8dc63f;
+    background-size:cover;
+    border-top:3px solid #3399FF ;
+    padding: 100px 0px;
+    overflow:hidden;
+}
+#bannerSports {
+	background:url(../images/banner2.jpg) no-repeat center center #8dc63f;
+    background-size:cover;
+    border-top:3px solid #3399FF ;
+    padding: 100px 0px;
+    overflow:hidden;
+}
+#bannerBbq {
+	background:url(../images/bannerSmoker.jpg) no-repeat center center #8dc63f;
+    background-size:cover;
+    border-top:3px solid #3399FF ;
+    padding: 100px 0px;
+    overflow:hidden;
+}
+
+
+.bannerTitle {
+    text-align:center;
+    font-size:6em;
+    color:#fff;
+    text-shadow:6px 6px 4px #000;
+    font-weight:700;
+}
+
+
+/*    MAIN STYLES===========================================================================    
+*/
+
+
+.mainBody {
+    width:1200px;
+    overflow:hidden;
+    margin:0px auto;
+    
+}
+
+.columnA, .columnB, .columnC {
+    width:384px;
+    margin-top:50px;
+	
+}
+
+.columnA, .columnB {
+    float:left;
+    margin-right:24px;
+}
+
+.columnC{
+    float:left;
+}
+
+.columnA h2, .columnB h2, .columnC h2{
+    font-weight:700;
+    font-size:3em;
+    text-align:center;
+}
+
+.columnImage span {
+    background-color:#;
+    color:#000;
+    display:block;
+    font-size:2em;
+    font-weight:600;
+    padding:20px 0px;
+    line-height:20px;
+    margin:15px;
+    text-align:center;
+    text-transform:uppercase;
+}
+
+.columnA p, .columnB p, .columnC p {
+    padding:0px;
+    text-align:justify;
+}
+
+#img1, #img2, #img3 {
+	margin-bottom:40px;
+}
+
+
+/*GALLERY STYLES========================================================================================*/
+
+#familyGallery {
+	display:none;
+}
+#familyButton {
+	background-color:#8dc63f;
+    color:#fff;
+    padding:10px 15px;
+    border-radius:20px;
+    text-align:center;
+    text-transform:uppercase;
+    font-weight:500;
+    float:left;
+    margin-left:93.6405px;
+	text-shadow:2px 2px 4px #000;
+}
+#familyButton:hover {
+	background-color:#3399FF;
+    color:#fff;
+    text-decoration:none;
+}
+
+#sportsGallery {
+	display:none;
+}
+#sportsButton {
+	background-color:#8dc63f;
+    color:#fff;
+    padding:10px 15px;
+    border-radius:20px;
+    text-align:center;
+    text-transform:uppercase;
+    font-weight:500;
+    float:left;
+    margin-left:93.6405px;
+	text-shadow:2px 2px 4px #000;
+}
+#sportsButton:hover{
+	background-color:#3399FF;
+    color:#fff;
+    text-decoration:none;
+}
+
+#bbqGallery {
+	display:none;
+}
+#bbqButton {
+	background-color:#8dc63f;
+    color:#fff;
+    padding:10px 15px;
+    border-radius:20px;
+    text-align:center;
+    text-transform:uppercase;
+    font-weight:500;
+    float:left;
+    margin-left:93.6405px;
+	text-shadow:2px 2px 4px #000;
+}
+#bbqButton:hover {
+	background-color:#3399FF;
+    color:#fff;
+    text-decoration:none;
+}
+
+
+
+
+/*BUTTON STYLES=========================================================================================
+*/
+
+a.button {
+    background-color:#8dc63f;
+    color:#fff;
+    padding:10px 15px;
+    border-radius:20px;
+    text-align:center;
+    text-transform:uppercase;
+    font-weight:500;
+    float:left;
+    margin-left:59.28875px;
+	text-shadow:2px 2px 4px #000;
+}
+
+a.button:hover {
+    background-color:#3399FF;
+    color:#fff;
+    text-decoration:none;
+}
+
+.centerButton {
+   width:258px;
+   margin:0px auto;
+}
+
+
+/*
+ABOUT STYLES==================================================================================================
+*/
+
+#aboutMe {
+	border:2px solid #3399FF;
+	margin-top:75px;
+}
+
+#pic {
+	width:374px;
+	margin-right:24px;
+	margin-top:10px;
+	margin-left:8px;
+	margin-bottom:10px;
+}
+
+.alignLeft {
+    float:left;
+    width:384px;
+
+}
+
+.alignRight {
+    float:right;
+    width:788px;
+	margin-top:10px;
+}
+
+.alignRight a {
+	margin-bottom:10px;
+}
+
+#wrap {
+	display:none;
+}
+
+#bioButton {
+    background-color:#8dc63f;
+    color:#fff;
+    padding:10px 15px;
+    border-radius:20px;
+    text-align:center;
+    text-transform:uppercase;
+    font-weight:500;
+    float:left;
+    margin-left:29.28875px;
+	text-shadow:2px 2px 4px #000;
+}
+
+#bioButton:hover {
+	background-color:#3399FF;
+    color:#fff;
+    text-decoration:none;
+}
+
+/*FOOTER========================================================================================================
+*/
+footer {
+    margin-top:50px;
+    clear:both;
+    display:inline;
+}
+
+#copyright {
+    background-color:#000;
+    overflow:hidden;
+    padding:20px 0px;
+    border-top:4px dotted #3399FF;
+    display:block;
+}
+
+footer p {
+    text-align:center;
+    font-size:1.35em;
+	color:#fff;
+}
+
+#copyright a {
+    color:#3399FF;
+}
+
+#copyright a:hover {
+    color:#8dc63f;
+}
+
+/*SOCIAL MEDIA ICON STYLES===================================================================================
+*/
+.social {
+    text-align:center;
+}
+
+.fa {
+    border:3px solid #000;
+    background-color:#3399FF;
+    color:#fff;
+    padding:10px 15px;
+    border-radius:20px;
+    text-align:center;
+    text-transform:uppercase;
+    font-weight:500;
+    margin:15px;
+    }
+
+.fa:hover {
+    background-color:#8dc63f;
+    color:#fff;
+    text-decoration:none;
+}
+
+.fa-facebook {
+    background-color:#0C516E;
+}
+
+.fa-twitter {
+    background-color:#8CA6D9;
+}
+/*CONTACT PAGE STYLES========================================================================================*/
+
+.contactPage {
+	height:100px;
+    text-align:center;
+    margin:10px auto;
+	color:#fff;
+	font-size:1.4em;
+	padding:7px;
+
+}
+
+.contactPage li{
+	display:inline;
+	text-align:center;
+}
+.contactPage li:hover {
+	color:#3399FF;
+	font-weight:900;
+	text-decoration:underline;
+}
+.contactMap {
+	margin-top:50px;
+}
+#map {
+	width:1000px;
+	margin:0px auto;
+	
+}
+#mapMover {
+	margin: 0px, auto;
+}
+
+#wufoo-z11wwk2z1eos6gr {
+	background-color:#fff;
+	width:1000px;
+	border:3px dotted #fff;
+	margin:0px auto;
+}
+/*RESUME PAGE STYLES======================================================================================================================*/
+
+
+
+
+
+
+/*FONT SYNTAX============================================================================================================================
+font-family: 'Kavoon', cursive;
+font-family: 'Shojumaru', cursive;
+font-family: 'Trade Winds', cursive;
+*/
+
+
+
+
